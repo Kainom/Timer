@@ -1,0 +1,97 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: black;
+}
+:root{
+    --primary-color-dark:rgb(234,0,217);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+@keyframes btn-pisca {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans',sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.container{
+    background-color: var(--primary-color);
+    height: 90vh;
+    width: 90vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 70%;
+    margin-top: 40px;
+    border: 3px solid white;
+}
+
+.pisca{
+    -webkit-animation: btn-pisca .9s linear infinite;
+   -moz-animation: btn-pisca .9s linear infinite;
+   -ms-animation: btn-pisca .9s linear infinite;
+   -o-animation: btn-pisca .9s linear infinite;
+   animation: btn-pisca .9s linear infinite;
+}
+
+#relogio{
+    margin-top: 27%;
+    text-align: center;
+    width: 420px;
+    height: 200px;
+    background: #0D0208;
+    border-radius: 15px;
+    border:  3px solid white;
+}
+p{
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #091833;
+
+}
+
+ button{
+    font-size: 1em;
+    background-color: rgb(0, 255, 106);;
+    color: #003062;
+    font-weight: 700;
+    padding: 13px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.1s;
+    margin-top: 100px;
+    margin-left: 10px;
+
+
+}
+button:active{
+    background-color:black;
+    color: rgb(0, 255, 106);
+    transition:all 0.1s;
+
+
+}
+
+
+#timer{
+    font-size: 3em;
+}
